@@ -1,24 +1,28 @@
-<div>
-  <button (click)=increaseNumber() type="button" class="btn btn-success">Aumentar</button>
-  <h1>{{ contador }}</h1>
-  <button (click)=decreaseNumber() type="button" class="btn btn-danger">Diminuir</button><br><br>
-  <button (click)=resetNumber() type="button" class="btn btn-warning">Reset</button>
-</div>
+<div id="container"> 
+  <div id="controller">
+    <button (click)=increaseNumber() type="button" class="btn btn-success">Aumentar</button>
+    <button (click)=decreaseNumber() type="button" class="btn btn-danger">Diminuir</button>
+    <button (click)=resetNumber() type="button" class="btn btn-warning">Reset</button>
+  </div>
+  <div id="counter">
+    <h1>{{ contador }}</h1>
+  </div>
 
-<div>
-<div [ngStyle]="{ background: contador %3 == 0 ? 'green' : 'blue'}" [ngClass]="{ custom: contador % 5 == 0}"> O Contador é {{ contador }}</div>
+  <div id="infos">
+    <div [ngStyle]="{ background: contador %3 == 0 ? 'green' : 'blue'}" [ngClass]="{ custom: contador % 5 == 0}"> O Contador é {{ contador }}</div>
 
-<div *ngIf="contador > 5; else menor"> Contador passou de 5</div>
+    <div *ngIf="contador > 5; else menor"> Contador passou de 5</div>
 
-<ng-template #menor>
-  <div>Contador menor que 5</div>
-</ng-template>
+    <ng-template #menor>
+      <div>Contador menor que 5</div>
+    </ng-template>
 
-<div [ngSwitch]="contador">
-  <div *ngSwitchCase="3">Igual a 3</div>
-  <div *ngSwitchCase="5">Igual a 5</div>
-  <div *ngSwitchCase="7"> Igual a 7</div>
-  <div *ngSwitchCase="11"> Igual a 11</div>
-  <div *ngSwitchDefault>Contando...</div>
-</div>
+    <div [ngSwitch]="contador">
+      <div *ngSwitchCase="3">Igual a 3</div>
+      <div *ngSwitchCase="5">Igual a 5</div>
+      <div *ngSwitchCase="7"> Igual a 7</div>
+      <div *ngSwitchCase="11"> Igual a 11</div>
+      <div *ngSwitchDefault>Contando...</div>
+    </div>
+  </div>
 </div>
