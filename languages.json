@@ -1,0 +1,64 @@
+{
+  "languages": [
+    {
+      "id": 1,
+      "name": "JavaScript",
+      "creator": "Brendan Eich",
+      "year": 1995
+    },
+    {
+      "id": 2,
+      "name": "PHP",
+      "creator": "Rasmus Lerdorf",
+      "year": 1995
+    },
+    {
+      "id": 3,
+      "name": "TypeScript",
+      "creator": "Anders Hejlsberg",
+      "year": 2012
+    },
+    {
+      "id": 4,
+      "name": "Java",
+      "creator": "James Gosling",
+      "year": 1995
+    },
+    {
+      "id": 5,
+      "name": "C#",
+      "creator": "Anders Hejlsberg",
+      "year": 2000
+    },
+    {
+      "id": 6,
+      "name": "Python",
+      "creator": "Guido van Rossum",
+      "year": 1990
+    },
+    {
+      "id": 7,
+      "name": "C",
+      "creator": "Dennis Ritchie",
+      "year": 1972
+    },
+    {
+      "id": 8,
+      "name": "HTML",
+      "creator": "Tim Berners-Lee",
+      "year": 1993
+    },
+    {
+      "id": 9,
+      "name": "Ruby",
+      "creator": "Yukihiro Matsumoto",
+      "year": 1995
+    },
+    {
+      "id": 10,
+      "name": "Swift",
+      "creator": "Chris Lattner",
+      "year": "2014"
+    }
+  ]
+}

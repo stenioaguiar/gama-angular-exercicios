@@ -11,4 +11,6 @@ export class LanguagesService {
   getLanguages() {
     return this.httpClient.get('https://alefesouza.dev/gama/languages.php')
   }
+
+  
 }

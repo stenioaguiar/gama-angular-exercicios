@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LanguagesService } from '../languages.service';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-languages',
@@ -9,12 +9,11 @@ import { LanguagesService } from '../languages.service';
 export class LanguagesComponent implements OnInit {
   languages: any = {};
 
-  constructor(private languagesService : LanguagesService) { }
+  constructor(private languageService : LanguageService) { }
 
   ngOnInit() {
-    this.languagesService.getLanguages().subscribe(value=>{
+    this.languageService.getLanguages().subscribe(value=>{
       this.languages = value;
-      console.log(value);
     });
   }
 

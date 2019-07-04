@@ -1,5 +1,6 @@
 <div>
+        <b>ID =</b> {{ data.id }}<br>
         <b>Nome =</b> {{ data.name }}<br>
         <b>Criador=</b> {{ data.creator }}<br>
-        <b>Ano =</b> {{ data.year }}<br>
+        <b>Ano =</b> {{ data.year | over2000}}<br>
     </div>

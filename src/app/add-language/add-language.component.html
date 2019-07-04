@@ -1,0 +1,43 @@
+<form #form="ngForm">
+    <div>
+        <label>Nome: </label>
+        <input type="text" 
+        [(ngModel)]="language.name" 
+        #nome="ngModel" 
+        required
+        name="nome">
+
+        <div *ngIf="nome.errors && nome.touched"> 
+            <div *ngIf="nome?.errors.required">Nome é obrigatório</div>  
+        </div>
+    </div>
+    
+    <div>
+        <label>Criador: </label>
+        <input type="text" 
+        [(ngModel)]="language.creator" 
+        #criador="ngModel" 
+        required
+        name="criador">
+
+        <div *ngIf="criador.errors && criador.touched"> 
+            <div *ngIf="criador?.errors.required">Criador é obrigatório</div>  
+        </div>
+    </div>
+
+    <div>
+        <label>Ano: </label>
+        <input type="text" 
+        [(ngModel)]="language.year" 
+        #ano="ngModel" 
+        required
+        name="ano">
+
+        <div *ngIf="ano.errors && ano.touched"> 
+            <div *ngIf="ano?.errors.required">Ano é obrigatório</div>  
+        </div>
+    </div>
+    <div>
+        <button [disabled]="form.invalid" (click)="enviar()">Enviar</button>
+    </div>
+</form>
