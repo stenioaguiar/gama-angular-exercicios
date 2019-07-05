@@ -11,6 +11,7 @@ import { FormsModule} from '@angular/forms';
 const routes: Routes = [
   { path: 'contador', component : ContadorComponent},
   { path: 'languages', loadChildren: () => import('./language/language.module').then(m => m.LanguageModule)},
+  { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)}, 
   
 ];
 
